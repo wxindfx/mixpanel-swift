@@ -37,6 +37,8 @@ Pod::Spec.new do |s|
     'SWIFT_ACTIVE_COMPILATION_CONDITIONS' => '$(inherited) WATCH_OS'
   }
 
+  s.dependency "SQLCipher"
+  
   s.subspec 'Complete' do |ss|
     ss.ios.pod_target_xcconfig = {
       'OTHER_SWIFT_FLAGS' => '$(inherited) -D DECIDE'

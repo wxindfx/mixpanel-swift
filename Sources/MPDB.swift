@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SQLite3
+import SQLCipher
 
 class MPDB {
     private var connection: OpaquePointer?
